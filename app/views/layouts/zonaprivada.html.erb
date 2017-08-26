@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Grupo - RUBYGEM</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+   <link rel="stylesheet" href="/css/font-awesome.css">
+   <link rel="stylesheet" href="/css/dashboard/dashboard.css">
+   <link rel="stylesheet" href="/css/dashboard/_all-skins.min.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="/dashboard/index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>LT</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Grupo</b>RUBYGEM</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+  
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="/dist/img/hadson.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Hadson Paredes</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="/dist/img/hadson.jpg" class="img-circle" alt="User Image">
+  
+                  <p>
+                    Hadson Paredes - Analista TI
+                    <small>Administrador</small>
+                  </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Cerrar</a>
+                  </div>
+                </li>
+              </ul>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="/dist/img/hadson.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Hadson Paredes</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Buscar...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">NAVIGACION PRINCIPAL</li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Persona</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="/dashboard/persona.html"><i class="fa fa-circle-o"></i> Cliente</a></li>
+            <li><a href="/dashboard/persona.html"><i class="fa fa-circle-o"></i> Persona</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="/dashboard/local.html">
+            <i class="fa fa-files-o"></i> <span>Local</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="/dashboard/listaalquiler.html">
+            <i class="fa fa-table"></i> <span>Listar Cachita</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="/dashboard/canchita.html">
+            <i class="fa fa-laptop"></i> <span>Cachita</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="/dashboard/servicioadicional.html">
+            <i class="fa fa-envelope"></i> <span>Servicio Adicional</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="/dashboard/publicidad.html">
+            <i class="fa fa-edit"></i> <span>Publicidad</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="/dashboard/acceso.html">
+            <i class="fa fa-folder"></i> <span>Accesos</span>
+          </a>
+        </li>
+        
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  </div>
+  
+  <%= yield %>
+  
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> Beta
+    </div>
+    <strong>Copyright &copy, 2017 Grupo - RUBYGEM | Todo los derechos reservados</strong>
+  </footer>
+  
+</body>
+</html>
